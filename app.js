@@ -2,6 +2,7 @@ const passwordinput = document.querySelector("#password");
 const togglepassword = document.querySelector("#togglepassword");
 const Submitbtn = document.querySelector("#Submitbtn");
 const criteriaList = document.querySelector("#criteriaList");
+const togglepasswordconfirm = document.querySelector("#togglepasswordconfirm");
 
 const letterCriteria = document.querySelector("#letter")
 
@@ -24,12 +25,11 @@ togglepassword.addEventListener("click",()=>{
 });
 
 
-togglepasswordconfirm.addEventListener("click",()=>{
-    const type=confirmpassowrd.type === "password"?"text":"password";
-    confirmpassowrd.type=type;
-    togglepasswordconfirm.textContent = type === "password" ? "👁️" :"🙈";
+togglepasswordconfirm.addEventListener("click", () => {
+    const type = confirmpassword.type === "password" ? "text" : "password";  
+    confirmpassword.type = type;
+    togglepasswordconfirm.textContent = type === "password" ? "👁️" : "🙈";
 });
-
 
 
 
