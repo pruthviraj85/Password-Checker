@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+ 
+
+    <!-- <h1>Password Checker</h1> -->
+    <div class="container">
+     <div class="form-group">
+         <form action="">
+            <label for="Password">Password</label>
+            <div class="password-container">
+                 <input type="password" placeholder="Create a password" name="" id="password">
+                 <button type="button" id="togglepassword" class="toggle-password">👁️</button>
+                <span class="error" id="passworderror"></span>
+            </div>
+                <ul class="criteria" id="criteriaList">
+                    <li class="invalid"  id="letter" > Must include at least one lowercase letter </li>
+                    <li class="invalid"  id="capital" > Must contain at least one uppercase letter </li>
+                    <li class="invalid"  id="number" > Must contain at least one number </li>
+                    <li class="invalid"  id="symbol" > Must have at least one special character </li>
+                    <li class="invalid"  id="length" > Password must be at least 8 characters long</li>
+                </ul>
+            
+         </form>
+
+    </div>
+        <div class="form-group">
+            <label for="confirmpassword">Confirm password</label>
+            <div class="password-container">
+                <input type="password" placeholder="confirm ur password" name="" id="confirmpassword">
+                <button type="button" id="togglepasswordconfirm" class="toggle-password">👁️</button>
+                <span class="error" id="confirmError"></span>
+            </div>
+        </div>
+             <button type="button" id="Submitbtn">Submit</button>
+    </div>
+
+    
+</body>
+</html>
